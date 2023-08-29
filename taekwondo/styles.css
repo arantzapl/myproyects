@@ -1,0 +1,378 @@
+:root {
+    --navbar-color: lightblue;
+    --footer-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cuerpo{
+    background: linear-gradient(135deg, rgba(4, 4, 247, 0.541), rgba(55, 202, 255, 0.681));
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    position: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contacto h2{
+    text-align: center;
+    padding: 1rem;
+    color: rgb(60, 0, 255);
+}
+
+.principal h2{
+    text-align: center;
+    padding: 1rem;
+    color: rgb(60, 0, 255);
+}
+
+.taek{
+    text-align: justify;
+}
+
+.cita{
+    display: block;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    font-style: italic;
+}
+
+hr{
+    visibility: hidden;
+}
+
+.nav-item {
+    list-style-type: none;
+    padding-left: 1rem;
+    position: flex;
+    font-size: 20px;
+}
+
+.principal, .contacto{
+    max-width: 100%;
+    max-height: 100%;
+    right: 0;
+    margin: 1rem;
+}
+
+.navbar{
+    background-color: var(--navbar-color);
+    padding: 0.5rem 0.5rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    z-index: 1;
+}
+
+.video{
+    text-align: center;
+}
+
+iframe{
+    width: 560px;
+    height: 315px;
+}
+
+.pie{
+    background-color: var(--footer-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.contacto, .productos, .video, .informacion{
+    background-color: var(--footer-color);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.logo{
+    border-radius: 1.5rem;
+    width: 20%;
+    height: 20%;
+    margin: 0.5rem;
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    text-align: center;
+}
+
+.card-title, .card-text{
+    padding: 0.5rem;
+}
+
+.combate{
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.card-body{
+    background-color: rgba(4, 4, 247, 0.541);
+    border-color: black 2px solid;
+}
+
+.productos .card{
+    margin: 0.5rem;
+    border-color: black 1px solid;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#pie{
+    display: flex;
+    justify-content: baseline;
+    align-items: end;
+    margin: 0.5rem;
+}
+
+#iconos{
+    display: absolute;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    float: right;
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.54);
+    border: black 1px solid;
+    background-color: aqua;
+    border-radius: 4px;
+}
+
+#top a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: white 2px dotted;
+}
+
+#top a:hover{
+    background-color: white;
+    color: black;
+    border: black 2px dotted;
+    border-radius: 5px;
+}
+
+#iconos:hover{
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+    border-radius: 7px;
+}
+
+.productos a{
+    color: rgb(0, 0, 90);
+    text-decoration: none;
+}
+
+.productos a:hover{
+    background-color: white;
+    color: black;
+    border: black 3px solid;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#nombre, #mensaje, #email, #submit{
+    width: 75%;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: solid 2px black;
+}
+
+#submit{
+    width: 40%;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: aqua;
+}
+
+#submit:hover{
+    background-color: white;
+    color: black;
+    border: black 2px solid;
+    border-radius: 7px;
+}
+
+@media screen and (min-width: 250px) and (max-width: 300px){
+    .combate{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .productos a{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .productos .card{
+        max-width: 80%;
+        max-height: 100%;
+    }
+
+    .card-title{
+        font-weight: bold;
+        font-size: 100%;
+    }
+
+    .video{
+        text-align: center;
+    }
+
+    iframe{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #nombre, #mensaje, #email, #submit{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-body{
+        background-color: rgba(4, 4, 247, 0.541);
+        border-color: black 2px solid;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .combate{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .productos a{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-title{
+        font-weight: bold;
+        font-size: 100%;
+    }
+
+    .video{
+        text-align: center;
+    }
+
+    iframe{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #nombre, #mensaje, #email, #submit{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-body{
+        background-color: rgba(4, 4, 247, 0.541);
+        border-color: black 2px solid;
+    }
+}
+
+@media screen and (max-width: 1200px){    
+    .combate{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .productos a{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-title{
+        font-weight: bold;
+        font-size: 100%;
+    }
+    
+    .video{
+        text-align: center;
+        max-width: 100%;
+        max-height: 100%; 
+    }
+    
+    iframe{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    #nombre, #mensaje, #email, #submit{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-body{
+        background-color: rgba(4, 4, 247, 0.541);
+        border-color: black 2px solid;
+    }
+}
+
+@media screen and (max-width: 1920px){    
+    .combate{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .productos a{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-title{
+        font-weight: bold;
+        font-size: 100%;
+    }
+    
+    .video{
+        text-align: center;
+        max-width: 100%;
+        max-height: 100%; 
+    }
+    
+    iframe{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    #nombre, #mensaje, #email, #submit{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-body{
+        background-color: rgba(4, 4, 247, 0.541);
+        border-color: black 2px solid;
+    }
+}

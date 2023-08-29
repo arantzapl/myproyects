@@ -1,0 +1,56 @@
+form{
+    background-color: rgba(123, 34, 206, 0.853);
+    padding: 2em;
+    margin: 2em 20em 2em 20em;
+}
+div.form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+label{
+    text-align: center;
+    font-size: 1.125rem;
+    display: flex;
+    margin-bottom: 0.25rem;
+}
+div{
+    display: block;
+}
+body{
+    font-family:  Verdana, sans-serif;
+}
+.header{
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    color: rgb(255,255,255);
+    text-shadow: rgb(0,0,0) 0.5em 0.5em 0.5em;
+}
+header{
+    display: block;
+    padding: 0 0.6rem;
+    margin-bottom: 1.9rem;
+}
+.etiqueta{
+    text-align: center;
+}
+body{
+    background-image: url("https://delighted.com/wp-content/uploads/2021/11/sending-surveys-4-survey-distribution-methods-2021-09.png");
+}
+.formu{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+}
+.boton{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: darkorchid;
+    font-weight: bold;
+    font-family: Verdana;
+}
+.sugerencia{
+    width: 100%;
+    font-family: Verdana, sans-serif;
+}

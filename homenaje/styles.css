@@ -1,0 +1,69 @@
+img{
+    display: block;
+    margin: auto;
+    background-color: rgba(0, 161, 59, 0.674);
+    padding: 1.5rem;
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+}
+#image{
+    display: block;
+    box-sizing: content-box;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+#img-caption{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-decoration-line: underline;
+    font-style: oblique;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+    color: rgb(28, 28, 28);
+    background: repeating-linear-gradient(45deg, rgb(2, 154, 2) 25%, rgb(106, 246, 106) 50%, rgb(106, 246, 106) 75%, rgb(2, 154, 2) 100%);
+    font-size: 1rem;
+}
+em{
+    font-style: italic;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#title{
+    text-align: center;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.471);
+}
+h4{
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.471);
+    text-decoration: underline;
+}
+#tribute-info{
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    column-count: 2;
+    font-size: 0.9rem;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(93, 127, 251);
+    display: grid;
+    place-content: center;
+    background-color:rgb(28, 28, 28);
+    padding: 1.5rem;
+    width: 20%;
+    margin: auto;
+    border-radius: 5%;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}

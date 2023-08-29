@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <title>Formulario de encuesta</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="titulo">Encuesta</h1>
+                <p id="descripcion" class="descripcion"><em>Formulario de encuesta de satisfaccion de compra</em></p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name" class="etiqueta">Nombre</label>
+                    <input id="name" name="name" class="formu" type="text" required placeholder="Introduce tu nombre">
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email" class="etiqueta">Email</label>
+                    <input id="email" name="email" class="formu" type="email" required placeholder="Introduce tu email">
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number" class="etiqueta">Edad</label>
+                    <input id="number" name="edad" class="formu" type="number" required min="18" max="90" placeholder="Edad">
+                </div>
+                <div class="form-group">
+                    <label class="etiqueta">¿Dónde realizaste la compra?</label>
+                    <select id="dropdown" class="formu">
+                        <option disabled selected value>(Seleccione una opción)</option>
+                        <option value="tienda">Tienda</option>
+                        <option value="web">Web</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>¿Recomendarías nuestra empresa para realizar tus compras?</p>
+                    <label><input name="recomendacion" type="radio" value="claro" checked>Por supuesto</label>
+                    <label><input name="recomendacion" type="radio" value="quiza" >Quizá...</label>
+                    <label><input name="recomendacion" type="radio" value="jamas">Jamás</label>
+                </div>
+                <div class="form-group">
+                    <p>¿Cómo conociste nuestra empresa?</p>
+                    <label><input name="conocer" type="checkbox" value="internet">Por internet</label>
+                    <label><input name="conocer" type="checkbox" value="amigo">Por un amigo</label>
+                    <label><input name="conocer" type="checkbox" value="publicidad">Por un anuncio</label>
+                </div>
+                <div class="form-group">
+                    <p>¿Alguna recomendación o sugerencia?</p>
+                    <textarea rows="5" cols="30" class="sugerencia" placeholder="Introduce tu recomendación, comentario o sugerencia aquí"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="submit" class="boton">
+                </div>
+            </form>
+        </div> 
+    </body>
+</html>
